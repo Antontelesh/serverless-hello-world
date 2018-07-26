@@ -8,4 +8,4 @@ phases:
 
   build:
     commands:
-      - serverless deploy --package .serverless
+      - serverless deploy --package hello-world/.serverless
