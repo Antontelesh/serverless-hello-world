@@ -14,4 +14,4 @@ phases:
   build:
     commands:
       - cd hello-world
-      - serverless deploy --stage cicd
+      - serverless deploy --stage qa
