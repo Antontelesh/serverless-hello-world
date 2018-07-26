@@ -4,14 +4,8 @@ phases:
 
   install:
     commands:
-      - npm install
       - npm install serverless -g
-
-  pre_build:
-    commands:
-      - npm test
 
   build:
     commands:
-      - cd hello-world
-      - serverless deploy --stage qa
+      - serverless deploy --package .serverless
