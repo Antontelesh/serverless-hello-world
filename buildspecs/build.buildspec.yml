@@ -5,7 +5,15 @@ phases:
   install:
     commands:
       - npm install
+      - npm install serverless -g
 
   build:
     commands:
       - npm test
+      - cd hello-world
+      - serverless package
+
+artifacts:
+  base-directory: hello-world/.serverless
+  files:
+    - '**/*'
