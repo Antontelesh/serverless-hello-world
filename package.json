@@ -1,13 +1,14 @@
 {
   "name": "serverless-hello-world",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "Anton Telesh <telesh91@gmail.com>",
-  "license": "MIT",
-  "private": true,
+  "description": "",
+  "main": "handler.js",
   "scripts": {
     "test": "npx jest"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "jest": "^23.4.1"
   }

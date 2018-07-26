@@ -5,11 +5,13 @@ phases:
   install:
     commands:
       - npm install
+      - npm install serverless -g
 
-  build:
+  pre_build:
     commands:
       - npm test
 
-cache:
-  paths:
-    - node_modules/**/*
+  build:
+    commands:
+      - cd hello-world
+      - serverless deploy --stage cicd
