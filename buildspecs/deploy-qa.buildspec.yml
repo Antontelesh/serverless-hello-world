@@ -9,4 +9,4 @@ phases:
   build:
     commands:
       - cd hello-world
-      - serverless deploy --package .serverless
+      - serverless deploy --package .serverless --stage qa
